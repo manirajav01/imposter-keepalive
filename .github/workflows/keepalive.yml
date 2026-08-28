@@ -12,5 +12,4 @@ jobs:
       - name: Ping Supabase
         run: |
           curl -s -o /dev/null -w "Status: %{http_code}\n" \
-            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
-            "https://uiuetruaahjwkdalqnff.supabase.co/rest/v1/"
+            "https://uiuetruaahjwkdalqnff.supabase.co/auth/v1/health"
